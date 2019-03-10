@@ -1,7 +1,7 @@
 sudo: required
 services:
   - docker
-
+language: node_js
 before_install:
   - docker build -t anilkmr458/react-docker -f Dockerfile.dev . 
 
