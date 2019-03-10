@@ -9,4 +9,4 @@ before_install:
   - docker build -t anilkmr458/react-docker -f Dockerfile.dev . 
 
 script:
-  - docker run anilkmr458/react-docker -- --coverage
+  - docker run anilkmr458/react-docker npm run test -- --coverage
